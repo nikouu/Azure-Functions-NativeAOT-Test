@@ -24,7 +24,7 @@ public class ForecastFunction
         _logger = loggerFactory.CreateLogger<ForecastFunction>();
     }
 
-    [Function("WeatherFunction")]
+    [Function("Forecast")]
     public async Task<HttpResponseData> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get")] HttpRequestData req)
     {
         _logger.LogInformation("C# HTTP trigger function processed a request.");
