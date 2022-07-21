@@ -5,7 +5,7 @@ using Microsoft.Extensions.Logging;
 
 namespace WeatherApp;
 
-public class WeatherFunction
+public class ForecastFunction
 {
     private readonly ILogger _logger;
     private readonly string[] WeatherEffects = new[]
@@ -19,9 +19,9 @@ public class WeatherFunction
         "Kanto", "Johto", "Hoenn", "Unova", "Kalos", "Alola", "Galar"
     };
 
-    public WeatherFunction(ILoggerFactory loggerFactory)
+    public ForecastFunction(ILoggerFactory loggerFactory)
     {
-        _logger = loggerFactory.CreateLogger<WeatherFunction>();
+        _logger = loggerFactory.CreateLogger<ForecastFunction>();
     }
 
     [Function("WeatherFunction")]
