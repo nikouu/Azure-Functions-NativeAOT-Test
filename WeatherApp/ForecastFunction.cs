@@ -8,10 +8,11 @@ namespace WeatherApp;
 public class ForecastFunction
 {
     private readonly ILogger _logger;
+
     private readonly string[] WeatherEffects = new[]
     {
         "Clear skies", "Harsh sunlight", "Extremely harsh sunlight", "Rain",
-        "Heavy rain", "Sandstorm", "Balmy", "Hail", "Fog", "Strong winds"
+        "Heavy rain", "Sandstorm", "Hail", "Fog", "Strong winds"
     };
 
     private readonly string[] Regions = new[]
