@@ -17,7 +17,7 @@ public class ForecastFunction
 
     private readonly string[] Regions = new[]
     {
-        "Kanto", "Johto", "Hoenn", "Unova", "Kalos", "Alola", "Galar"
+        "Kanto", "Johto", "Hoenn", "Sinnoh", "Unova", "Kalos", "Alola", "Galar"
     };
 
     public ForecastFunction(ILoggerFactory loggerFactory)
